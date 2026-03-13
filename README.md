@@ -33,13 +33,14 @@ It was designed to support reproducible analysis of resistance-associated loci u
 
 `Galaxy`, `fasterq-dump`, `Falco`, `fastp`, `Cutadapt`, `BWA-MEM2`, `Picard`, `Samtools`, `mosdepth`, `bcftools`, `SnpEff`, `SnpSift`, `MultiQC`, `IGV`
 
-## Example Outputs
+## Outputs
 
 Include here:
-- workflow screenshot
-- MultiQC screenshot
-- IGV screenshot
-- summary variant table
+- QC and trimming summary
+- Mapping summary
+- Variant tables for resistance-associated loci
+- Resistance interpretation summary
+- IGV screenshots for selected mutations
 
 ## Key Skills Demonstrated
 
