@@ -1,0 +1,12 @@
+Sample,Gene,Mutation (HGVS.p / HGVS.c),Effect,Genomic Position,DP,ALT reads,VAF
+SRR15014608,rpoB,p.D435Y / c.1303G>T,missense,761109,83,83,1
+,katG,p.Q295P / c.884A>C,missense,2155228,60,60,1
+,katG,p.Q295* / c.883C>T,stop gained,2155229,60,55,0.917
+SRR15014611,rpoB,p.S450L / c.1349C>T,missense,761155,66,66,1
+SRR15014612,rpoB,p.S450L / c.1349C>T,missense,761155,44,44,1
+,katG,p.S315T / c.944G>C,missense,2155168,96,96,1
+SRR15014616,rpoB,p.H445R / c.1334A>G,missense,761140,70,70,1
+,katG,p.S315T / c.944G>C,missense,2155168,78,78,1
+SRR15014634,rpoB,p.L430P / c.1289T>C,missense,761095,80,80,1
+SRR15014771,rpoB,p.S450L / c.1349C>T,missense,761155,47,47,1
+,katG,p.S315T / c.944G>C,missense,2155168,73,73,1

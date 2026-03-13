@@ -1,0 +1,7 @@
+Sample ID,rpoB mutation,katG mutations,RIF genotypic evidence,INH genotypic evidence,Final classification
+SRR15014608,p.D435Y,p.Q295P + p.Q295*,Resistant,Resistant (loss-of-function),Genotypically consistent with MDR-TB
+SRR15014611,p.S450L,None,Resistant,No marker detected,RIF-resistant
+SRR15014612,p.S450L,p.S315T,Resistant,Resistant,Genotypically consistent with MDR-TB
+SRR15014616,p.H445R,p.S315T,Resistant,Resistant,Genotypically consistent with MDR-TB
+SRR15014634,p.L430P,None,Resistant,No marker detected,RIF-resistant
+SRR15014771,p.S450L,p.S315T,Resistant,Resistant,Genotypically consistent with MDR-TB

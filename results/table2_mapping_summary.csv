@@ -1,0 +1,7 @@
+Sample (SRA),% mapped,Mean depth (region),Breadth >10×,Notes
+SRR15014608,99.62%,89.38,1,Excellent mapping; complete target coverage (min 74×).
+SRR15014611,98.26%,76.15,1,Lowest mapping; target still fully covered (min 56×).
+SRR15014612,98.62%,91.43,1,High mapping; strong target depth (min 52×).
+SRR15014616,99.36%,108.97,1,Best target depth; complete coverage (min 91×).
+SRR15014634,99.36%,103.34,1,High target depth; complete coverage (min 72×).
+SRR15014771,99.51%,76.2,1,Lowest target depth; still fully covered (min 56×).

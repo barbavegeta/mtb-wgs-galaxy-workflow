@@ -1,0 +1,13 @@
+Sample (SRA),Reads (Raw),Reads (Trimmed),% bases Q?30,Adapter content,Notes
+SRR15014608,"1,189,584","1,110,016",94.05%,R1: 1.4%,High Q30 
+,,,,R2: 1.3%,Modest read loss
+SRR15014611,"1,295,229","1,160,720",90.27%,R1: 1.3%,Lowest Q30 
+,,,,R2: 1.3%,High read loss
+SRR15014612,"1,135,036","961,462",90.83%,R1: 1.3%,Low Q30 
+,,,,R2: 1.2%,Highest read loss
+SRR15014616,"1,282,108","1,236,560",94.87%,R1: 1.4%,Highest Q30 
+,,,,R2: 1.4%,Lowest read loss
+SRR15014634,"1,343,996","1,279,859",91.91%,R1: 1.3%,Good Q30
+,,,,R2: 1.4%,Low read loss
+SRR15014771,"1,174,179","1,106,667",90.71%,R1: 1.3%,Low Q30
+,,,,R2: 1.5%,Moderate read loss
