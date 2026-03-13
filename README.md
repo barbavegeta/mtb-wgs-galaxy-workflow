@@ -35,7 +35,6 @@ It was designed to support reproducible analysis of resistance-associated loci u
 
 ## Outputs
 
-Include here:
 - QC and trimming summary
 - Mapping summary
 - Variant tables for resistance-associated loci
