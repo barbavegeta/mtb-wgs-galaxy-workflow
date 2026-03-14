@@ -1,7 +1,168 @@
 {
     "a_galaxy_workflow": "true",
     "annotation": "",
-    "comments": [],
+    "comments": [
+        {
+            "color": "blue",
+            "data": {
+                "title": "FASTQ Retrieval"
+            },
+            "id": 0,
+            "position": [
+                0,
+                160
+            ],
+            "size": [
+                250,
+                855.3
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "turquoise",
+            "data": {
+                "title": "Read Trimming"
+            },
+            "id": 2,
+            "position": [
+                360,
+                510
+            ],
+            "size": [
+                250,
+                400
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "pink",
+            "data": {
+                "title": "Variant Annotation"
+            },
+            "id": 9,
+            "position": [
+                1360,
+                1280
+            ],
+            "size": [
+                690,
+                714.9
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "red",
+            "data": {
+                "title": "Aggregate Reporting"
+            },
+            "id": 8,
+            "position": [
+                1750,
+                300
+            ],
+            "size": [
+                250,
+                786.5
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "yellow",
+            "data": {
+                "title": "Variant Calling &amp; Filtering"
+            },
+            "id": 7,
+            "position": [
+                230,
+                1400
+            ],
+            "size": [
+                640,
+                916.1
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "lime",
+            "data": {
+                "title": "Mapping QC &amp; Coverage Analysis"
+            },
+            "id": 6,
+            "position": [
+                1280,
+                0
+            ],
+            "size": [
+                250,
+                1209.2
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "blue",
+            "data": {
+                "title": "Reference, Target Regions &amp; Annotation Inputs"
+            },
+            "id": 5,
+            "position": [
+                20,
+                1120
+            ],
+            "size": [
+                1110,
+                160
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "orange",
+            "data": {
+                "title": "Alignment / BAM Processing"
+            },
+            "id": 4,
+            "position": [
+                790,
+                250
+            ],
+            "size": [
+                250,
+                815.3
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "blue",
+            "data": {
+                "title": "Input / Data ingestion"
+            },
+            "id": 3,
+            "position": [
+                800,
+                40
+            ],
+            "size": [
+                240,
+                194.9
+            ],
+            "type": "frame"
+        },
+        {
+            "color": "lime",
+            "data": {
+                "title": "Quality Control"
+            },
+            "id": 1,
+            "position": [
+                350,
+                60
+            ],
+            "size": [
+                240,
+                336.9
+            ],
+            "type": "frame"
+        }
+    ],
     "format-version": "0.1",
     "name": "BIOLSC902_Module_Project",
     "report": {
@@ -24,8 +185,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 0,
-                "top": 770
+                "left": 30,
+                "top": 200
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"txt\"], \"tag\": null}",
@@ -44,21 +205,21 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "Input_Reference_FASTA_H37Rv"
+                    "name": "Input_Target_Regions_BED"
                 }
             ],
-            "label": "Input_Reference_FASTA_H37Rv",
+            "label": "Input_Target_Regions_BED",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1390,
-                "top": 1190
+                "left": 40,
+                "top": 1160
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"tag\": null}",
+            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": null}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "61c59997-6223-4d81-9d11-86df73fd5e21",
+            "uuid": "1c70c387-1c25-4306-bf3b-aa17678d185f",
             "when": null,
             "workflow_outputs": []
         },
@@ -71,21 +232,21 @@
             "inputs": [
                 {
                     "description": "",
-                    "name": "Input_Target_Regions_BED"
+                    "name": "Input_Reference_FASTA_H37Rv"
                 }
             ],
-            "label": "Input_Target_Regions_BED",
+            "label": "Input_Reference_FASTA_H37Rv",
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 1370,
-                "top": 1990
+                "left": 300,
+                "top": 1160
             },
             "tool_id": null,
-            "tool_state": "{\"optional\": false, \"format\": [\"bed\"], \"tag\": null}",
+            "tool_state": "{\"optional\": false, \"tag\": null}",
             "tool_version": null,
             "type": "data_input",
-            "uuid": "1c70c387-1c25-4306-bf3b-aa17678d185f",
+            "uuid": "61c59997-6223-4d81-9d11-86df73fd5e21",
             "when": null,
             "workflow_outputs": []
         },
@@ -105,8 +266,8 @@
             "name": "Input dataset",
             "outputs": [],
             "position": {
-                "left": 3300,
-                "top": 1660
+                "left": 630,
+                "top": 1160
             },
             "tool_id": null,
             "tool_state": "{\"optional\": false, \"format\": [\"gff3\"], \"tag\": null}",
@@ -132,8 +293,8 @@
                 }
             ],
             "position": {
-                "left": 2980,
-                "top": 2320
+                "left": 910,
+                "top": 1160
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff_download/5.2+galaxy1",
@@ -177,8 +338,8 @@
                 }
             ],
             "position": {
-                "left": 310,
-                "top": 740
+                "left": 30,
+                "top": 330
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/split_file_to_collection/split_file_to_collection/0.5.2",
@@ -207,7 +368,7 @@
                     "output_name": "output"
                 },
                 "reference_genome|genome_fasta": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -230,8 +391,8 @@
                 }
             ],
             "position": {
-                "left": 4120,
-                "top": 1990
+                "left": 1830,
+                "top": 1600
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/gffread/gffread/2.2.1.4+galaxy0",
@@ -287,8 +448,8 @@
                 }
             ],
             "position": {
-                "left": 640,
-                "top": 740
+                "left": 30,
+                "top": 500
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1",
@@ -327,8 +488,8 @@
                 }
             ],
             "position": {
-                "left": 1010,
-                "top": 740
+                "left": 20,
+                "top": 840
             },
             "post_job_actions": {},
             "tool_id": "__APPLY_RULES__",
@@ -384,8 +545,8 @@
                 }
             ],
             "position": {
-                "left": 1380,
-                "top": 340
+                "left": 370,
+                "top": 100
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/falco/falco/1.2.4+galaxy0",
@@ -437,8 +598,8 @@
                 }
             ],
             "position": {
-                "left": 1380,
-                "top": 700
+                "left": 380,
+                "top": 560
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/fastp/fastp/1.1.0+galaxy0",
@@ -486,8 +647,8 @@
                 }
             ],
             "position": {
-                "left": 1390,
-                "top": 990
+                "left": 380,
+                "top": 770
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/5.2+galaxy1",
@@ -526,8 +687,8 @@
                 }
             ],
             "position": {
-                "left": 2230,
-                "top": 370
+                "left": 820,
+                "top": 80
             },
             "post_job_actions": {},
             "tool_id": "__FLATTEN__",
@@ -550,7 +711,7 @@
                     "output_name": "output_paired_coll"
                 },
                 "reference_source|ref_file": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -573,8 +734,8 @@
                 }
             ],
             "position": {
-                "left": 2220,
-                "top": 630
+                "left": 820,
+                "top": 290
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.3+galaxy0",
@@ -630,8 +791,8 @@
                 }
             ],
             "position": {
-                "left": 3250,
-                "top": 0
+                "left": 1310,
+                "top": 80
             },
             "post_job_actions": {
                 "ChangeDatatypeActiontext_file": {
@@ -669,7 +830,7 @@
                 }
             },
             "inputs": [],
-            "label": null,
+            "label": "Sort_Aligned_BAM",
             "name": "SortSam",
             "outputs": [
                 {
@@ -678,8 +839,8 @@
                 }
             ],
             "position": {
-                "left": 2210,
-                "top": 990
+                "left": 820,
+                "top": 640
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_SortSam/3.1.1.0",
@@ -718,8 +879,8 @@
                 }
             ],
             "position": {
-                "left": 3260,
-                "top": 540
+                "left": 1310,
+                "top": 390
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/samtools_flagstat/samtools_flagstat/2.0.8",
@@ -758,8 +919,8 @@
                 }
             ],
             "position": {
-                "left": 3270,
-                "top": 830
+                "left": 1310,
+                "top": 600
             },
             "post_job_actions": {
                 "ChangeDatatypeActionoutput": {
@@ -796,7 +957,7 @@
                     "output_name": "bam_output"
                 },
                 "window|region_file": {
-                    "id": 2,
+                    "id": 1,
                     "output_name": "output"
                 }
             },
@@ -835,8 +996,8 @@
                 }
             ],
             "position": {
-                "left": 3280,
-                "top": 1060
+                "left": 1310,
+                "top": 770
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/mosdepth/mosdepth/0.3.12+galaxy0",
@@ -879,8 +1040,8 @@
                 }
             ],
             "position": {
-                "left": 2190,
-                "top": 1250
+                "left": 810,
+                "top": 880
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/3.1.1.0",
@@ -905,7 +1066,7 @@
             "id": 20,
             "input_connections": {
                 "addref_cond|ref": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 },
                 "input": {
@@ -913,7 +1074,7 @@
                     "output_name": "outFile"
                 },
                 "mode|filter_config|cond_region|bedfile": {
-                    "id": 2,
+                    "id": 1,
                     "output_name": "output"
                 }
             },
@@ -923,7 +1084,7 @@
                     "name": "addref_cond"
                 }
             ],
-            "label": null,
+            "label": "Subset_BAM_To_Target_Regions",
             "name": "Samtools view",
             "outputs": [
                 {
@@ -932,8 +1093,8 @@
                 }
             ],
             "position": {
-                "left": 1840,
-                "top": 1960
+                "left": 260,
+                "top": 1440
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/samtools_view/samtools_view/1.22+galaxy1",
@@ -962,7 +1123,7 @@
                     "output_name": "outputsam"
                 },
                 "reference_source|ref_file": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -989,8 +1150,8 @@
                 }
             ],
             "position": {
-                "left": 2240,
-                "top": 1950
+                "left": 250,
+                "top": 1770
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_mpileup/bcftools_mpileup/1.22+galaxy0",
@@ -1042,8 +1203,8 @@
                 }
             ],
             "position": {
-                "left": 2630,
-                "top": 1930
+                "left": 250,
+                "top": 2070
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_call/bcftools_call/1.22+galaxy0",
@@ -1082,8 +1243,8 @@
                 }
             ],
             "position": {
-                "left": 2960,
-                "top": 1960
+                "left": 660,
+                "top": 1700
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_filter/bcftools_filter/1.22+galaxy0",
@@ -1112,7 +1273,7 @@
                     "output_name": "output_file"
                 },
                 "sec_restrict|regions|regions_file": {
-                    "id": 2,
+                    "id": 1,
                     "output_name": "output"
                 }
             },
@@ -1131,8 +1292,8 @@
                 }
             ],
             "position": {
-                "left": 3300,
-                "top": 1830
+                "left": 650,
+                "top": 1460
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_view/bcftools_view/1.22+galaxy0",
@@ -1151,7 +1312,7 @@
             "workflow_outputs": []
         },
         "25": {
-            "annotation": "",
+            "annotation": "In SnpEff, the chromosome name for Mycobacterium tuberculosis h37rv is not NC_000962.3 but simply \"Chromosome\". So by replacing NC_000962.3 to Chromosome is possible to carry on with the analysis.",
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/9.5+galaxy3",
             "errors": null,
             "id": 25,
@@ -1171,8 +1332,8 @@
                 }
             ],
             "position": {
-                "left": 3320,
-                "top": 2090
+                "left": 1380,
+                "top": 1380
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_replace_in_line/9.5+galaxy3",
@@ -1201,7 +1362,7 @@
                     "output_name": "output_file"
                 },
                 "sec_default|reference_source|fasta_ref": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -1228,8 +1389,8 @@
                 }
             ],
             "position": {
-                "left": 3780,
-                "top": 1980
+                "left": 1770,
+                "top": 810
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_stats/bcftools_stats/1.22+galaxy0",
@@ -1262,7 +1423,7 @@
                     "output_name": "output_gff"
                 },
                 "sec_required|reference_source|fasta_ref": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 }
             },
@@ -1285,8 +1446,8 @@
                 }
             ],
             "position": {
-                "left": 4470,
-                "top": 1970
+                "left": 1830,
+                "top": 1320
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_csq/bcftools_csq/1.22+galaxy0",
@@ -1346,8 +1507,8 @@
                 }
             ],
             "position": {
-                "left": 3300,
-                "top": 2320
+                "left": 1380,
+                "top": 1580
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/5.2+galaxy1",
@@ -1415,8 +1576,8 @@
                 }
             ],
             "position": {
-                "left": 4480,
-                "top": 640
+                "left": 1770,
+                "top": 360
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.33+galaxy0",
@@ -1455,8 +1616,8 @@
                 }
             ],
             "position": {
-                "left": 3790,
-                "top": 2420
+                "left": 1830,
+                "top": 1840
             },
             "post_job_actions": {},
             "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/snpsift/snpSift_extractFields/4.3+t.galaxy0",
@@ -1476,6 +1637,6 @@
         }
     },
     "tags": [],
-    "uuid": "588dffe5-359d-490e-9a67-9c20a69db628",
-    "version": 51
+    "uuid": "bda312fc-1c5d-43f0-a806-2f2b403156df",
+    "version": 7
 }
